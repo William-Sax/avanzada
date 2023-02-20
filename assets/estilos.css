@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+body{
+    background-image: url(../image/inteligencia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+    border-radius: 20px ;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px ;
+    outline: none;
+    transition: all 300ms;
+    
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46a2fd;
+}
+
+/*Formularios*/
+.container__login{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 400ms cubic-bezier(0.75, 0.885, 0.320, 1.275);
+}
+.container__login form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.container__login form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46a2fd;
+}
+
+.container__login form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+.container__login form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46a2fd;
+    color: #fff;
+    border-radius: 20px ;
+    cursor: pointer;
+    outline: none;
+}
+.form-buscar{
+    opacity: 1;
+    display: block;
+}
+
+.Registrar__inmueble{
+    display: none;
+}
+
+/*Responsive*/
+@media screen and (max-width: 850px){
+    main{
+        margin-top: 50px;
+    }
+    .ccaja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    /*Formulario*/
+    .container__login{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .container__login form{
+        position: relative;
+    }
+}
